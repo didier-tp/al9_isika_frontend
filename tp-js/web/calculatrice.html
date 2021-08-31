@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>calculatrice</title>
+	<script src="./js/calculatrice.js" ></script>
+	<!-- <link rel="stylesheet" href="./css/styles.css" type="text/css" >  -->
+</head>
+<body id="main" >
+   <h1 >calculatrice</h1>
+   a: <input id="a" type="text" /> <br/>
+   b: <input id="b" type="text" /> <br/>
+   <input type="button" onclick="calculerOperation('+')"  value="a+b"></input>
+   <input type="button" onclick="calculerOperation('*')"  value="a*b"></input>
+   <input type="button" onclick="calculerOperation('-')"  value="a-b"></input> 
+   <input type="button" onclick="calculerOperation('/')"  value="a/b"></input><br/>
+   <div  id="spanRes">res</div> 
+   <hr/>
+   <input type="checkbox" id="cbHisto" onclick="cacherOuMontrerHistorique()" checked /> voir l'historique <br/>
+   <ul id="ulHistorique" >
+    <!-- <li>2*3=6</li> -->
+   </ul>
+</body>
+</html>
