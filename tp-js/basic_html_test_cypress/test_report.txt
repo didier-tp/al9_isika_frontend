@@ -5,8 +5,8 @@
   (Run Starting)
 
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ Cypress:    6.8.0                                                                              │
-  │ Browser:    Chrome 89                                                                          │
+  │ Cypress:    6.9.1                                                                              │
+  │ Browser:    Chrome 92                                                                          │
   │ Specs:      1 found (myTest.spec.js)                                                           │
   │ Searched:   cypress\integration\myTest.spec.js                                                 │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
@@ -18,12 +18,12 @@
 
 
   My HTML/JS Tests
-    √ good addition in calculatriceV3.html (1519ms)
-    √ good multiplication in calculatriceV3.html (1424ms)
-    √ Historique cache ou bien affiche (2633ms)
+    √ good addition in calculatriceV3.html (949ms)
+    √ good multiplication in calculatriceV3.html (2526ms)
+    √ Historique cache ou bien affiche (4805ms)
 
 
-  3 passing (9s)
+  3 passing (10s)
 
 
   (Results)
