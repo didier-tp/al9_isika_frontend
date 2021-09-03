@@ -9,7 +9,7 @@ function displaySelectedProd(prod){
 }
 
 function initProdFromNewInput(){
-	var prod = { id : undefined , 
+	var prod = { code : undefined , 
 				nom : undefined, 
 				prix: undefined};
 	prod.code = document.getElementById('spanCode').innerText;
@@ -52,6 +52,10 @@ function addRowInTable(prod){
 
 function refreshAllDataInTable(){
 	document.getElementById("bodyTableau").innerHTML="";//supprimer eventuelles anciennes lignes
+	//page courante d'url = http://localhost:8282/html/ajax_prod.html
+	//URL relative ici en .. pour remonter de http://localhost:8282/html
+	//vers http://localhost:8282
+	
 	makeAjaxGetRequest("../produit-api/public/produit",function(data){
 		tabProd = JSON.parse(data);
 		for(let i in tabProd){

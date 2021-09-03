@@ -70,6 +70,8 @@ apiRouter.route('/produit-api/public/produit')
 apiRouter.route('/produit-api/private/role-admin/produit')
 .post( function(req , res , next ) {
     var nouveauProduit = req.body;
+    //console.log("req.body="+req.body);
+    //var nouveauProduit = JSON.parse(req.body);
     //simulation auto_incr :
     if(nouveauProduit.code == null){
         codeMax++; nouveauProduit.code = codeMax;

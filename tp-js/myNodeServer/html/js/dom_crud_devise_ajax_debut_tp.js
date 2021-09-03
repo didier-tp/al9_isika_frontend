@@ -42,6 +42,7 @@ function postNewDeviseWithAjax(nouvelleDevise){
     /*makeAjaxPostRequest( .....URL QUI VA BIEN ..... ,
                         nouvelleDevise AU FORMAT JSON ,  
                         afterPostNewDeviseWithAjaxCallback);*/
+                         
     //*******************************************************
 }
 
