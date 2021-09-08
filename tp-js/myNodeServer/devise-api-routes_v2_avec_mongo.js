@@ -2,7 +2,7 @@ var express = require('express');
 const apiRouter = express.Router();
 
 var myGenericMongoClient = require('./my_generic_mongo_client');
-var deviseDaoMongo = require('./devise-dao-mongo');
+//var deviseDaoMongo = require('./devise-dao-mongo');
 
 function replace_mongoId_byCode(devise){
 	devise.code = devise._id;
