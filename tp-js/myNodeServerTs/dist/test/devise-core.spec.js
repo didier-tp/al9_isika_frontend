@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const chai_1 = tslib_1.__importDefault(require("chai"));
+const chai_1 = (0, tslib_1.__importDefault)(require("chai"));
 const MongoDeviseDataService_1 = require("../core/mongo/MongoDeviseDataService");
 let expect = chai_1.default.expect;
 var deviseDataService = new MongoDeviseDataService_1.MongoDeviseService();

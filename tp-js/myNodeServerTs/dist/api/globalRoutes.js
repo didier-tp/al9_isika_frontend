@@ -4,8 +4,8 @@ exports.globalRouter = void 0;
 const tslib_1 = require("tslib");
 //modules to load:
 const express_1 = require("express");
-const path = tslib_1.__importStar(require("path"));
-exports.globalRouter = express_1.Router();
+const path = (0, tslib_1.__importStar)(require("path"));
+exports.globalRouter = (0, express_1.Router)();
 var redirectDownloadToAngularIndexPage = function (req, res, next) {
     //send SPA index.html (or side *.js if base=".") 
     //instead of virtual relative angular routes "/ngr/*"

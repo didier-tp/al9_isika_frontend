@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const chai_1 = tslib_1.__importDefault(require("chai"));
-const chai_http_1 = tslib_1.__importDefault(require("chai-http"));
+const chai_1 = (0, tslib_1.__importDefault)(require("chai"));
+const chai_http_1 = (0, tslib_1.__importDefault)(require("chai-http"));
 const server_1 = require("../server");
 let expect = chai_1.default.expect;
 // Configure chai

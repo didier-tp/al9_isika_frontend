@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.server = exports.app = void 0;
 const tslib_1 = require("tslib");
-const express_1 = tslib_1.__importDefault(require("express"));
-const bodyParser = tslib_1.__importStar(require("body-parser"));
-exports.app = express_1.default();
+const express_1 = (0, tslib_1.__importDefault)(require("express"));
+const bodyParser = (0, tslib_1.__importStar)(require("body-parser"));
+exports.app = (0, express_1.default)();
 const apiHandler_1 = require("./api/apiHandler");
 const globalRoutes_1 = require("./api/globalRoutes");
 const deviseApiRoutes_1 = require("./api/deviseApiRoutes");
