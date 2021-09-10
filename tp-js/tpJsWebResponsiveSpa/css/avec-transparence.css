@@ -9,7 +9,7 @@ si coeff alpha proche de 0 très transparent.
 si coeff alpha proche de 1 très opaque.
 */
 .degradeDeBleu {
-  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.9), rgba(255, 255, 255, 0.9));
+  background: linear-gradient(to bottom right, rgba(20, 13, 92, 0.9), rgba(255, 255, 255, 0.9));
   box-shadow: 4px 4px grey;
 }
 
