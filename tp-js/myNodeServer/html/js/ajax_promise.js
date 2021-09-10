@@ -14,7 +14,6 @@ window.onload = function (){
         let codeMSource = document.getElementById("source").value;
         let codeMCible = document.getElementById("cible").value;
         let montant = Number(document.getElementById("montant").value);
-        
         try{
         let urlDeviseSource = "../devise-api/public/devise/"+codeMSource;
         let deviseSourceJson = await ajaxGetPromise(urlDeviseSource);
