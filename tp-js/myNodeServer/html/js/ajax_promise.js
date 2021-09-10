@@ -9,6 +9,31 @@ function ajaxGetPromise(url){
 
 window.onload = function (){
     let btnConv = document.getElementById("btnConv");
+    btnConv.addEventListener('click',
+    async function (event){
+        let codeMSource = document.getElementById("source").value;
+        let codeMCible = document.getElementById("cible").value;
+        let montant = Number(document.getElementById("montant").value);
+        
+        try{
+        let urlDeviseSource = "../devise-api/public/devise/"+codeMSource;
+        let deviseSourceJson = await ajaxGetPromise(urlDeviseSource);
+        console.log("deviseSourceJson="+deviseSourceJson);
+        let objDeviseSource = JSON.parse(deviseSourceJson);
+        let urlDeviseCible = "../devise-api/public/devise/"+codeMCible;
+        let deviseCibleJson  = await ajaxGetPromise(urlDeviseCible);
+        let objDeviseCible = JSON.parse(deviseCibleJson);
+        let montantConverti = montant * objDeviseCible.change / objDeviseSource.change;
+        document.getElementById("spanRes").innerHTML="<i>"+montantConverti+"</i>";
+        }
+        catch(err){
+            console.log(err);
+        }
+    })
+}
+/*
+window.onload = function (){
+    let btnConv = document.getElementById("btnConv");
     btnConv.addEventListener('click',function (event){
         let codeMSource = document.getElementById("source").value;
         let codeMCible = document.getElementById("cible").value;
@@ -29,6 +54,8 @@ window.onload = function (){
         .catch((err)=>console.log(err));
     })
 }
+*/
+
 /*
 window.onload = function (){
     let btnConv = document.getElementById("btnConv");
