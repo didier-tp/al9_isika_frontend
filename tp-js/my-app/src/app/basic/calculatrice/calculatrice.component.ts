@@ -22,7 +22,7 @@ export class CalculatriceComponent implements OnInit {
   //a! : number; // ! pour permettre undefined au tout debut
   a : number | undefined  ; //doit être ulterieurement testé
   b : number | undefined  ;
-  res : number = 0;
+  res : number = 0; 
 
   montrerHisto : boolean = true;
   historiqueCalculs :string[] = [];
@@ -49,7 +49,7 @@ export class CalculatriceComponent implements OnInit {
   x :number = 0; 
   y :number = 0;
 
-  onMouseMove(evt : MouseEvent){
+  onMouseMove(evt :MouseEvent){
     let currentDiv : HTMLElement  = <HTMLElement> evt.target;
     this.x = evt.pageX - currentDiv.offsetLeft;
     this.y = evt.pageY - currentDiv.offsetTop;
