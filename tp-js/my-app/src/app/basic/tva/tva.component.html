@@ -17,6 +17,6 @@
     -->
     <div *ngIf="tva != 0">
       tva= <span>{{tva}}</span> <br/>
-      ttc= <span>{{ttc}}</span> <br/>
+      ttc= <span>{{ttc | number:'1.0-2'}}</span> <br/>
     </div>
   </div>

@@ -6,6 +6,8 @@ import { PreferencesService } from '../common/service/preferences.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  today : Date = new Date();
+
   listeCouleurs : string[] = [ "lightyellow", "white",
      "lightgrey" , "lightgreen" , "lightpink" , "lightblue"] ;    
   constructor(public preferencesService : PreferencesService) { }
