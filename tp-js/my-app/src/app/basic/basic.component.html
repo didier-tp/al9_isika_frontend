@@ -14,7 +14,7 @@ message: <b>{{message}}</b>
 
 
 
-
+<!--
 <tabset>
     <tab heading="calculatrice (v1)">
         <app-calc></app-calc>
@@ -26,6 +26,16 @@ message: <b>{{message}}</b>
        <app-tva></app-tva>
     </tab>
 </tabset>
+
+-->
+
+<bsu-toggle-panel title="calculatrice">
+  <app-calculatrice></app-calculatrice>  
+</bsu-toggle-panel>
+
+<bsu-toggle-panel title="calcula tva">
+    <app-tva></app-tva>  
+  </bsu-toggle-panel>
 
 
 <app-xy></app-xy>

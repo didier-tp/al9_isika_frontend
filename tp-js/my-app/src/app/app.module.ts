@@ -17,6 +17,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CalcComponent } from './basic/calc/calc.component';
+import { BsUtilModule } from 'src/bs-util/bs-util.module';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CalcComponent } from './basic/calc/calc.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BsUtilModule,
     BrowserAnimationsModule,
     TabsModule.forRoot(),
     HttpClientModule
