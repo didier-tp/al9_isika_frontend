@@ -7,7 +7,10 @@
     <a routerLink='/ngr-admin-devise'> admin-devise</a> &nbsp;
 </p>
 -->
-<bsu-nav-bar [brandTitle]='titre'
+<div class="entete" [style.background-color]="preferencesService.couleurFondPreferee"> 
+  <p>....</p>    
+  <bsu-nav-bar [brandTitle]='titre'
              [menuDefs]="myMenuDefs"></bsu-nav-bar>
+</div>             
 
 
