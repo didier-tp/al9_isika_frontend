@@ -9,8 +9,8 @@ import { PreferencesService } from '../common/service/preferences.service';
 export class HeaderComponent implements OnInit {
 
   @Input()
-  public titre :string ="app";
-
+  public titre : string = "titre_par_defaut";
+ 
   constructor(public preferencesService : PreferencesService) { }
 
   ngOnInit(): void {
