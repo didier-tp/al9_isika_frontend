@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
         { label : "login" , path : "ngr-login" } ,
         { label : "basic" , path : "ngr-basic" } ,
         { divider : true },
-        { label : "welcome" , path : "ngr-welcome" }
+        { label : "welcome" , path : "ngr-welcome" },
       ]
     },
     { label : "basic" , path : "ngr-basic" } , 
