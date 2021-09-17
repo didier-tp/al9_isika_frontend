@@ -18,6 +18,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CalcComponent } from './basic/calc/calc.component';
 import { BsUtilModule } from 'src/bs-util/bs-util.module';
+import { ConversionComponent } from './conversion/conversion.component';
+import { AdminDeviseComponent } from './admin-devise/admin-devise.component';
+import { MyAuthInterceptor } from './common/interceptor/my-auth.interceptor';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,9 @@ import { BsUtilModule } from 'src/bs-util/bs-util.module';
     ZzComponent,
     LoginComponent,
     WelcomeComponent,
-    CalcComponent
+    CalcComponent,
+    ConversionComponent,
+    AdminDeviseComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +49,11 @@ import { BsUtilModule } from 'src/bs-util/bs-util.module';
     HttpClientModule
   ],
   providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: MyAuthInterceptor,
+      multi: true
+      }
 ],
   bootstrap: [AppComponent]
 })
